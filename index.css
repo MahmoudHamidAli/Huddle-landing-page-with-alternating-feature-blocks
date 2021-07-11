@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+    /* font-family: 'Open Sans', sans-serif;
+
+     */
+
+    
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+    color: var(--Very-Dark-Cyan);
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #eee; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background: url(images/bg-hero-desktop.svg);
+    background-color: var(--Very-Pale-Cyan);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header nav {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    width: 120px;
+}
+
+header nav button {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 530;
+    border: none;
+    outline: none;
+    width: 180px;
+    padding: 12px 0;
+    background-color: #fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-shadow: 0px 0px 12px 8px rgba(204, 204, 204, 0.35);
+    cursor: pointer;
+}
+
+header .text {
+    width: calc(80% / 1);
+    margin: 0 auto;
+    padding: 50px 0;
+    /* border: 2px solid; */
+    /* border: #111 solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-dev h1 {
+    width: 80%;
+}
+
+.left-dev p {
+    font-size: 17.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin: 20px 0;
+    color: rgb(48, 47, 47);
+}
+
+.left-dev button {
+    border: none;
+    outline: none;
+    width: 270px;
+    margin-top: 10px;
+    padding: 15px 0;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.right-dev {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-dev  img {
+    width: 95%;
+    height: 105%;
+    align-self: flex-end;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.main-section {
+    width: calc(100% / 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    border: #eee 2px solid;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.main-section .text {
+    width: 50%;
+    padding-left: 80px;
+}
+
+.main-section .text p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.wrap .main-section .pic {
+    width: 40%;
+    padding: 20px;
+}
+
+.wrap .main-section .pic img {
+    width: 100%;
+}
+
+.overflowing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 160px;
+    padding: 30px 40px;
+    margin-top: 50px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.overflowing h2 {
+    font-size: 23px;
+}
+
+.overflowing button {
+    border: none;
+    outline: none;
+    width: 270px;
+    margin-top: 20px;
+    padding: 15px 0;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+footer {
+    margin-top: -100px;
+    padding: 100px 0 30px 0;
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Cyan);
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .huddle {
+    width: 170px;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.wrapper .middle {
+    width: calc(100% / 1);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 20px 0; 
+}
+
+.wrapper .middle a {
+    color: var(--Very-Pale-Cyan);
+}
+
+.wrapper .middle .left {
+    width: calc(80% / 2.2);
+    
+}
+
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.wrapper .middle .left img {
+    margin-right: 20px;
+    
+}
+
+.wrapper .middle .last {
+    width: calc(100% / 6);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 27px
+}
+
+.wrapper .middle .last ion-icon {
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.wrapper .bottom {
+    width: 100%;
+}
+
+.wrapper .bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+
+.wrapper .bottom .attribution {
+    font-size: 13px;
+    text-align: center;
+}
+
+.wrapper .bottom .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:600px) {
+    header nav {
+        width: calc(100% / 1.11);
+    }   
+    
+    header .text {
+/*         width: calc(90% / 1); */
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    
+    header .text .left-dev h1 {
+        width: 100%;
+    }
+    
+    header .text .left-dev p {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    header .text .left-dev button {
+        margin-top: 20px;
+        margin-bottom: 40px;         
+    }
+    
+    header .text .right-dev {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .text .right-dev img {
+        width: 105%;
+        height: auto;
+        align-self: center;
+    }
+    
+    main {
+        width: 90%;
+    }
+    
+    main .main-section {
+        justify-content: space-between;
+        flex-flow: column wrap;
+        text-align: center;
+        
+    }
+    
+    main .main-section .text, main .main-section .pic {
+        width: 100%;
+        margin: auto;
+        padding: 0 35px;        
+    }
+    
+    main .main-section .text {
+        margin-bottom: 40px;
+    }
+    
+    main .top {
+        flex-flow: column-reverse wrap;
+    }
+    
+    .overflowing {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    footer .huddle {
+        width: 140px;
+    }
+    
+    .wrapper {
+        width: 85%;
+    }
+    .wrapper .middle {
+        flex-flow: column wrap;
+    }
+    .wrapper .middle .left {
+        width: 100%;
+    }
+    .wrapper .middle .last {
+        width: 50%;
+        margin: 10px auto;
+        justify-content: space-around;
+        font-size: 25px;
+    }
+    .wrapper .middle .last li {
+        margin: 0;
+    }
+    
+    .wrapper .bottom ul {
+        justify-content: center;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+    
+    .wrapper .bottom ul li {
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-flow: column wrap;
+    }
+    
+}
